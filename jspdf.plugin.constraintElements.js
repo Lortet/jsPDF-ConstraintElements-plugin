@@ -1,4 +1,4 @@
-;(function(API) {
+((API) => {
     'use strict';
 
     API.constraintText = function(text, x, y, options) {
@@ -8,7 +8,7 @@
         options.maxWidth = options.maxWidth || 0;
         options.maxHeight = options.maxHeight || 0;
         options.lineBreakFactor = options.lineBreakFactor || 0;
-        if(typeof options.lineBreakCharacte === 'undefined') options.lineBreakCharacter = '-';
+        if(typeof options.lineBreakCharacter === 'undefined') options.lineBreakCharacter = '-';
         if(typeof options.lineHeightFactor === 'undefined') options.lineHeightFactor = 1.15;
 
         let saveColor;
